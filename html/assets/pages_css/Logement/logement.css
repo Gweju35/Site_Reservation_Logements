@@ -1,0 +1,138 @@
+.liste_logement {
+    display: flex;
+    flex-direction: column;
+}
+
+.logement {
+    background-color: white;
+    border-radius: var(--radius-size);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+}
+
+.un_logement {
+    position: relative;
+}
+
+.image_logement {
+    height: 25em;
+    width: 40%;
+    
+}
+
+.image_logement>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infos_logement {
+    width: 60%;
+    border-top: 2px solid var(--main-blue); /* Bordure en haut */
+    border-bottom: 2px solid var(--main-blue); /* Bordure en bas */
+    border-right: 2px solid var(--main-blue); /* Bordure à droite */
+    border-radius: 0px 10px 10px 0px; /* Border radius pour les coins supérieurs */
+    padding: 1em;
+    position: relative;
+    color: black;
+}
+
+.accroche {
+    margin-left: 20px;
+    font-family: 'Montserrat-Semibold', sans-serif;
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.description {
+    margin-left: 20px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 22px;
+}
+
+.note{
+    margin-left: 20px;
+    font-family: 'Montserrat-regular', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5em; 
+}
+
+.fa-star{
+    color: gold;
+}
+
+.nombre_personne_max {
+    margin-left: 20px;
+    font-family: 'Montserrat-regular', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 3em;
+}
+
+.prix_nuit {
+    margin-left: 20px;
+    font-family: 'Montserrat-regular';
+    font-size: 20px;
+    position: absolute;
+    bottom: 1em;
+}
+
+.bouton_logement {
+    position: absolute;
+    bottom: 0.6em;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.popup .content {
+    position:fixed;
+    top: 20%;
+    left: 85%;
+    transform: translate(-50%, -50%) scale(0);
+    background: var(--main-blue);
+    width: 370px;
+    height: 80px;
+    z-index: 2;
+    text-align: center;
+    
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--beige);
+}
+.popup h1{
+    color: var(--beige);
+}
+
+.popup .button_form{
+    margin-top: 3em;
+}
+
+.cercle_statut {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+
+

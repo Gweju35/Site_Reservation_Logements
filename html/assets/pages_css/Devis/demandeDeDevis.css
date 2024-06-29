@@ -1,0 +1,328 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+input{
+    /* Styles généraux du champ de date */
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+}
+
+/* Style spécifique pour le calendrier */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: var(--main-blue); /* Changer cette valeur pour la couleur souhaitée */
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;  /*Alligner les éléments du formulaire en colonnes*/
+    align-items: center;    /*Centre les lignes dans le formulaire*/
+}
+
+
+h3{
+    color: var(--main-blue); /*Couleur du titre h3*/
+}
+
+h2{
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    color: var(--beige);                        /*Mets de la couleur sur le h2, définit une taille, des marges*/
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Detail du contenu d'un formulaire*/
+.contenuForm{
+    width: 65vw;
+    border: 3px solid var(--main-blue);
+    border-radius: 20px;                    /*Définit la taille du contenu du form, met une bordure, des espaces et des couleurs*/
+    padding: 1.5em 2em 1.5em 2em;
+    background-color: white;
+    color: var(--main-blue);
+    margin-top: 3em;
+}
+.contenuForm input{
+    margin: 0.5em 0em 0.5em 1em;
+    color: var(--main-blue);        /*Définit des marges et des couleurs sur les boutons dans le formulaire*/
+    border-color: var(--main-blue);
+}
+.contenuForm select{
+    margin: 0.5em 0em 0.5em 0em;        /*Définit les marges et les couleurs des selecteurs d'option*/
+    color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+
+
+
+
+
+/* Calendrier de couleur principale*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 1;
+    filter: invert(10%) sepia(61%) saturate(4916%) hue-rotate(214deg) brightness(98%) contrast(92%);
+}
+input[type="number"]{
+    width: 4%;
+    padding-left: 0.3em;
+}
+
+
+
+
+
+/* Design des différentes parties du formulaire*/
+.sousForm{
+    padding-left: 2em;              /*Couleurs et marges pour les éléments du sousForm*/
+    background-color: white ;
+    margin-top: 2em;
+}
+.sousForm h3{
+    color: var(--main-blue);
+    background-color: white ;       /*Couleurs, position, police et marges intérieurs du titre*/
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    font-family: 'familjen-grotesk-semibold';
+}
+
+
+
+
+/* FLECHE EN HAUT A GAUCHE*/
+.conteneur_titre_back {
+    display: flex;
+    flex-direction: row;        /*Permet d'aligner la flèche de retour de la page*/
+    align-items: center;
+    bottom: 0.5em;
+}
+
+/* cercle de retour (contient la flèche) */
+.cercle_retour {
+    background-color: var(--main-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* flèche de retour */
+.cercle_retour img {
+    height: 30px;
+}
+
+/* conteneur du titre de la page */
+.titre_page {
+    display : flex;
+    align-items : center;
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    height: 8vh;
+}
+
+/* titre de la page */
+.titre_page h2 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--beige);
+    font-size: var(--h2-size);
+}
+
+.conteneur_titre_back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    right: 35vw;
+    bottom: 0.5em;
+}
+
+/* cercle de retour (contient la flèche) */
+.cercle_retour {
+    background-color: var(--main-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.demande h2{
+    font-family: 'familjen-grotesk-bold', sans-serif;
+}
+
+/* flèche de retour */
+.cercle_retour img {
+    height: 30px;
+}
+
+/* conteneur du titre de la page */
+.titre_page {
+    display : flex;
+    align-items : center;
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    height: 8vh;
+}
+
+/* titre de la page */
+.titre_page h2 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--beige);
+    font-size: var(--h2-size);
+}
+
+/* Styles pour les cases à cocher */
+.check_form input[type="checkbox"] {
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--main-blue); /* Couleur de la bordure */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styles pour les cases à cocher cochées */
+.check_form input[type="checkbox"]:checked {
+    background-color: var(--main-blue);
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+
+}
+
+.taille_checkbox input[type="checkbox"]{
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+    background-color: var(--main-blue);
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+}
+
+/* Styles pour le texte à côté des cases à cocher */
+.check_form label {
+    margin-left: 5px;
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--main-blue);
+}
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--main-blue);
+}
+.popup h1{
+    color: var(--main-blue);
+}
+
+.popup .button_form{
+    margin-top: 3em;
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}   

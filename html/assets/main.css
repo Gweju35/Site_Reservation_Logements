@@ -1,0 +1,811 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+/* POLICES */
+
+
+
+:root {
+    --main-blue: #0A3782;
+    --beige: #F5E3D3;
+    --pressing : #D9C8B8;
+    --secondary-blue: #016F99;
+    --background-color: #EDF2F7;
+    --h1-size: 2em;
+    --h2-size: 1.5em;
+    --h3-size: 1.2em;
+    --p-size: 1em;
+    --radius-size: 10px;
+    --icon-default-size: 45px;
+    --icon-color-beige: invert(86%) sepia(15%) saturate(329%) hue-rotate(337deg) brightness(106%) contrast(92%);
+    --icon-color-secondary-blue: invert(48%) sepia(47%) saturate(6196%) hue-rotate(169deg) brightness(96%) contrast(101%);
+}
+
+*, *::before, *::after {
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body {
+    scroll-behavior: smooth;
+    
+}
+
+.background {
+    opacity: 20%;
+    background-image: url(ressources/images/bretagne_background.jpg);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: fixed;
+    z-index: -1;
+    top: 0%;
+    filter: blur(2px);
+}
+
+/* TITRES */
+h1, h2, h3, h4, h5 {
+    font-family: "familjen-grotesk-regular", sans-serif;
+    color: var(--gray-level-1);
+    font-weight: normal;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+/* TITRES */
+
+/* PARAGRAPHE */
+p, span, form, label, a {
+    font-family: "familjen-grotesk-regular", sans-serif;
+    font-size: var(--p-size);
+}
+/* PARAGRAPHE */
+
+/* ICONES */
+span.icon {
+    filter: var(--icon-color-beige);
+    width: var(--icon-default-size);
+    height: var(--icon-default-size);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.icon.reservationIcone {
+    background-image: url(ressources/icons/Reservation.svg);
+}
+
+.icon.calendar {
+    background-image: url(ressources/icons/calendar.svg);
+}
+
+.icon.account {
+    background-image: url(ressources/icons/account.svg);
+}
+
+.icon.house {
+    background-image: url(ressources/icons/house.svg);
+    width: 35px;
+    height: 35px;
+}
+
+.icon.mail {
+    background-image: url(ressources/icons/mail.svg);
+}
+
+.icon.bed {
+    background-image: url(ressources/icons/bed.svg);
+}
+
+.icon.single_bed {
+    background-image: url(ressources/icons/single_bed.svg);
+}
+
+.icon.double_bed {
+    background-image: url(ressources/icons/double_bed.svg);
+}
+
+.icon.bedroom {
+    background-image: url(ressources/icons/bedroom.svg);
+}
+
+.icon.shower {
+    background-image: url(ressources/icons/shower.svg);
+}
+
+.icon.ruler {
+    background-image: url(ressources/icons/ruler.svg);
+}
+
+.icon.dog {
+    background-image: url(ressources/icons/dog.svg);
+}
+
+.icon.people {
+    background-image: url(ressources/icons/people.svg);
+}
+
+.icon.crossmark {
+    background-image: url(ressources/icons/crossmark.svg);
+}
+
+.icon.checkmark {
+    background-image: url(ressources/icons/checkmark.svg);
+}
+
+.icon.pin {
+    background-image: url(ressources/icons/pin.svg);
+}
+
+.icon.nb_avis {
+    background-image: url(ressources/icons/nb_avis.svg);
+}
+
+.icon.hotel {
+    background-image: url(ressources/icons/hotel.svg);
+}
+
+.icon.language {
+    background-image: url(ressources/icons/language.svg);
+}
+
+.icon.report_flag {
+    background-image: url(ressources/icons/report_flag.svg);
+}
+
+.icon.arrow-left {
+    background-image: url(ressources/icons/arrow-left.svg);
+}
+
+.icon.arrow-right {
+    background-image: url(ressources/icons/arrow-right.svg);
+}
+
+.icon.filter {
+    background-image: url(ressources/icons/filtre.svg);
+}
+.icon.map {
+    background-image: url(ressources/icons/map.svg);
+    filter: invert(0%) sepia(13%) saturate(7482%) hue-rotate(75deg) brightness(105%) contrast(97%);
+}
+/* ICONES */
+
+/* HEADER */
+#closeBtn, #openBtn {
+    display: none;
+}
+
+header {
+    background-color: var(--main-blue);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 40px;
+    width: 130px;
+    position: absolute;
+    top: 1em;
+    left: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav ul:first-of-type {
+    position: absolute;
+    left: 13em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+header nav ul:last-of-type {
+    position: absolute;
+    right: 2em;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    color: var(--beige);
+    display: flex;
+    gap: .5em;
+}
+
+header nav ul li a .icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover !important;
+}
+
+
+
+
+/* header {
+    position: relative;
+    background-color: var(--main-blue);
+    height: 75px;
+}
+
+header img {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  height: 40px;
+  width: 130px;
+}
+
+nav ul {
+  padding: 0;
+  width: fit-content;
+  margin: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Sanchez-Regular', sans-serif !important;
+    margin: 0 1em;
+}
+
+a.nav_button {
+    display: flex;
+    align-items: center;
+    color: var(--beige);
+}
+
+a.nav_button:active {
+  color: var(--beige);
+}
+
+a.nav_button:active .icon {
+  filter: var(--icon-color-beige);
+}
+
+a.nav_button:visited {
+  color: var(--beige);
+}
+
+a.nav_button:visited .icon {
+  filter: var(--icon-color-beige);
+}
+
+.active span {
+  color: var(--secondary-blue);
+}
+
+.active .icon {
+  filter: var(--icon-color-secondary-blue);
+} */
+/* HEADER */
+
+/* FOOTER */
+.footer {
+    background-color: var(--main-blue);
+    text-align: center;
+    padding: 15px;
+    font-family: "familjen-grotesk-semibold", sans-serif;
+    color: var(--beige);
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+
+
+
+main {
+    margin: 2em 2em; 
+    min-height: 600px;
+    margin-top: 100px;
+}
+
+
+/* ---------- BOUTON ---------- */
+.button_form {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    background-color: var(--secondary-blue);
+    color: var(--beige);
+    border-radius: var(--radius-size);
+    border: solid 2px var(--secondary-blue);
+    padding: 15px 20px;
+    white-space: nowrap;
+    font-size: var(--h3-size);
+    margin: 15px;
+}
+
+.button_form:hover {
+    color: var(--secondary-blue);
+    background-color: var(--beige);
+    border: solid 2px var(--secondary-blue);
+}
+
+.button_form:active {
+    color: var(--secondary-blue);
+    background-color: var(--pressing);
+    border: solid 2px var(--secondary-blue);
+}
+
+
+/* DEMANDE DE DEVIS */
+
+#demandeDeDevis {
+    padding: 10px;
+}
+
+#demandeDeDevis h2 {
+    font-family: "familjen-grotesk-bold";
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* RETOUR + TITRE PAGE */
+
+/*<div class="conteneur_titre_back">   
+            <a href="javascript:history.back()">
+                <div class="cercle_retour"><img src="../assets/ressources/icons/left-arrow.svg" alt="icone back" /></div>
+            </a>
+            <div class="titre_page">
+                <h2>Formulaire d'inscription :</h2>
+            </div>
+</div>*/
+
+.conteneur_titre_back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0.5em;
+}
+
+/* cercle de retour (contient la flèche) */
+.cercle_retour {
+    background-color: var(--main-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* flèche de retour */
+.cercle_retour img {
+    height: 30px;
+}
+
+/* conteneur du titre de la page */
+.titre_page {
+    display : flex;
+    align-items : center;
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    height: 8vh;
+}
+
+/* titre de la page */
+.titre_page h2 {
+    font-family: "familjen-grotesk-bold", sans-serif;
+    color: var(--beige);
+    font-size: var(--h2-size);
+}
+
+/* CSS POUR LES FORMULAIRES */
+
+/* titre de la section des infos à remplir*/
+.titre_section{
+    background-color: white;
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    color: var(--main-blue);
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    padding: 0px 10px 0px;
+    size: var(--h3-size);
+}
+
+/* contour des champs a remplir*/
+.section_form{
+    border: 3px solid var(--main-blue);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    width: 15vw;
+    padding: 1em 3em 1em;
+}
+
+/*permet le placement des champs*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; /
+}
+
+/*centre les items*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* TAILLES DES CHAMPS DE SAISIES*/
+
+/*taille de base*/
+.taille_champs_base{
+    width: 25vw;
+}
+ /*taille grande*/
+.taille_champs_grand{
+    width: 40.5vw;
+}
+ /*taille pour les grand textes*/
+.taille_champs_texarea{
+    min-width: 40.5vw;
+    max-width: 40.5vw;
+    min-height: 10vh;
+    max-height: 15em;
+}
+
+/*taille pour les petits champs*/
+.taille_champs_mini{
+    width: 5vw;
+}
+
+/*bouton la séléction des fichiers*/
+.champs_fichiers{
+    border: none;
+    height: 2em;
+    margin-top: 5px;
+}
+
+/*aligne deux éléments*/
+.aligner{
+    display: flex;
+    flex-direction: row;
+}
+
+/*position du label et input*/
+.check_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+/*  CheckBox    */
+/*
+HTML :
+<div class="check_form">
+    <label for="menage">Ménage :</label>
+    <input type="checkbox" class="taille_checkbox" id="menage" name="menage" value="true"/>
+    <br />
+</div>
+*/ 
+/* Styles pour les cases à cocher */
+.check_form input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--main-blue); /* Couleur de la bordure */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Styles pour les cases à cocher cochées */
+.check_form input[type="checkbox"]:checked {
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    content: url(ressources/icons/checkmarkcheckbox.svg);
+    padding: 2.2px;
+}
+
+/* Styles pour le texte à côté des cases à cocher */
+.check_form label {
+    margin-left: 5px;
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--main-blue);
+}
+
+/*  Calendrier  */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 1;
+    filter: invert(10%) sepia(61%) saturate(4916%) hue-rotate(214deg) brightness(98%) contrast(92%);
+}
+
+
+
+
+
+/* -------------------- MEDIA QUERIES HEADER-------------------- */
+@media (max-width: 1024px) {
+
+    header nav {
+        margin-left: 50px;
+    }
+    
+    header span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 860px) {
+    header img {
+        height: 30px;
+        width: 100px;
+        left: 1.5em;
+        top: 1.5em;
+    }
+
+    header nav ul:first-of-type {
+        left: 9em;
+    }
+}
+
+@media (max-width: 790px) {
+
+    header nav {
+        margin-left: 100px;
+    }
+
+    header span {
+        font-size: 0.65rem;
+    }
+
+    header img {
+        left: 1.5em;
+        top: 1.5em;
+        height: 30px;
+        width: 100px;
+    }
+
+    header .icon {
+        background-size: 6vw auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 720px) {
+    header .icon{
+        height: 24px !important;
+        width: 24px !important;
+    }
+
+    header nav ul:first-of-type {
+        gap: 1em;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header li > a > span:nth-child(2) {
+        margin-top: -5px;
+    }
+}
+
+
+@media (max-width: 510px) {
+
+    header nav {
+        margin-left: 70px;
+    }
+
+    header span {
+        font-size: 0.65rem;
+    }
+
+    header img {
+        left: 1.2em;
+        top: 1.75em;
+        height: 25px;
+        width: 80px;
+    }
+
+    header li > a > span:nth-child(2) {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    header .burger {
+        position: absolute;
+        left: 0;
+        top: 1.5em;
+    }
+
+    header img {
+        left: 5em;
+        top: 1.5em;
+    }
+
+    #accueil .icon, #mes_logements .icon, #reservations .icon, #calendrier .icon, #profil .icon, #se_connecter .icon {
+        display: none !important;
+    }
+
+    header #closeBtn, #openBtn {
+        display: block;
+    }
+
+    /* Burger pour ouvrir le menu */
+    header .burger-icon span {
+        display: block;
+        width: 40px;
+        height: 3.5px;
+        background-color: var(--beige);
+        margin-bottom: 7px;
+        margin-left: 20px;
+    }
+
+    /* Croix pour fermer le menu */
+    header .sidenav .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        font-size: 50px;
+        color: var(--beige);
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 250px;
+    }
+
+    header li a span {
+        font-size: 1.5rem;
+        color: var(--beige) !important;
+        font-family: 'Sanchez-regular', sans-serif !important;
+    }
+
+    header li {
+        margin: 20px;
+    }
+
+    /* Sidenav menu */
+    header .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: -250px;
+        padding-top: 70px;
+        padding-right: 200px;
+        background-color: var(--main-blue);
+        transition: left 0.5s ease;
+    }
+    
+    /* La distance à partir de la bordure gauche de la page */
+    header .sidenav.active {
+        left: 0;
+    }
+
+    header nav ul:first-of-type {
+        position: relative;
+        align-items: flex-start;
+        left: 10px;
+        top: 0px;
+        gap: 0em;
+    }
+
+    header nav ul:last-of-type {
+        position: relative;
+        top: 0px;
+        left: 10px;
+    }
+
+    header nav ul {
+        position: absolute;
+        top: 0;
+        transform: none;
+    }
+
+    .titre_page h2 {
+        font-size: var(--h3-size);
+    }
+}
+
+@media screen and (max-width: 310px) {
+
+    .titre_page h2 {
+        font-size: var(--p-size);
+    }
+}
+/* -------------------- MEDIA QUERIES HEADER-------------------- */

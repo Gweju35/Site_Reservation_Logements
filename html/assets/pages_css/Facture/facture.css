@@ -1,0 +1,178 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+/* CSS DE LA PAGE */
+h1{
+    text-align: center;
+}
+
+/* mise en place de la police */
+body, p, h2{
+    font-family: 'Montserrat-Semibold', sans-serif;
+}
+
+/*positionnnement de la page*/
+.contenu{
+    display: flex;
+    flex-direction: column;
+    /* mettre la section au centre */
+}
+
+/*bodure du tableau*/
+.table_facture, td, th, tr {
+    border: 2px solid var(--main-blue);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* case en bleu */
+.case_table_color{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+/* Centrer le texte dans la tableau */
+.table_facture td:not(:first-child),
+.table_facture th:not(:first-child) {
+    text-align: center;
+}
+
+/* enlever le style des 3 premières cellules AIDE PLEASE*/
+.last-row{
+    border: none;
+}
+
+/* décaler les éléments vers la droite */
+.right_info_client{
+    margin-left: 30vw;
+}
+
+.sectionForm {
+    border: 3px solid var(--main-blue);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    padding: 1em 3em 1em;
+}
+
+@media (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteneur_titre_back {
+        align-self : flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenu {
+        width: 95%;
+        display: flex;
+    }
+}
+
+@media (max-width: 570px) {
+    .table_facture, td, th, tr {
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .contenu {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}   
+
+@media (max-width: 340px) {
+    .table_facture, td, th, tr {
+        padding: 1px;
+        font-size: 10px;
+    }
+
+    .contenu {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 8px;
+    }
+}   

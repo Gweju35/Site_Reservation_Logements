@@ -1,0 +1,220 @@
+/* Conteneur du choix d'inscription */
+.choix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-blue);
+    margin-top: 20px
+}
+
+/* Couleur des liens */
+a, a:active {
+    color: var(--main-blue);
+}
+
+/* Conteneneur des choix */
+.choix_proprio, .choix_client {
+    display: flex;
+    align-items: center;
+    border: solid var(--main-blue) 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* "Inscrivez-vous en tant que :" */
+.inscription {
+    align-self: flex-start;
+}
+
+/* <h2> du "Inscrivez-vous en tant que :" */
+h2 {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+}
+
+/* Texte dans les rectangles de choix */
+.texte {
+    padding: 20px;
+}
+
+/* <p> dans les rectangles de choix */
+p {
+    font-size: var(--p-size);
+    font-family: 'Montserrat-Semibold', sans-serif;
+    width: 32vw;
+}
+
+/* <h3> dans les rectangles de choix */
+h3 {
+    font-size: var(--h2-size);
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+/* Images dans les rectangles de choix */
+.choix_client img {
+    height: 150px;
+    width: 150px;
+    margin-left: 5px;
+}
+
+/*Conteneur des lignes de séparation */
+.ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-blue);
+}
+
+/* Lignes de séparation entre les 2 rectangles de choix */
+.trait {
+    flex: 1;
+    height: 1px;
+    background-color: var(--main-blue);
+    margin: 0 20px;
+}
+
+/* "ou" de séparation entre les 2 rectangles de choix */
+.ou {
+    font-size: var(--h2-size);
+    font-family: 'familjen-grotesk', sans-serif;
+}
+
+/*------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    /* Conteneur du choix d'inscription */
+    .choix {
+        margin-top: 20px
+    }
+
+    /* Conteneneur des choix */
+    .choix_proprio, .choix_client {
+        border: solid var(--main-blue) 2px;
+        border-radius: 9px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Conteneur du choix d'inscription */
+    .choix {
+        margin-top: 15px
+    }
+
+    /* Conteneneur des choix */
+    .choix_proprio, .choix_client {
+        border-radius: 7px;
+        margin: 5px 0;
+    }
+
+    /* Texte dans les rectangles de choix */
+    .texte {
+        padding: 25px;
+    }
+
+    /* <p> dans les rectangles de choix */
+    p {
+        width: 47vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .choix {
+        margin-top: 15px
+    }
+
+    /* Conteneneur des choix */
+    .choix_proprio, .choix_client {
+        border-radius: 7px;
+        margin: 5px 0;
+    }
+
+    /* Texte dans les rectangles de choix */
+    .texte {
+        padding: 20px;
+    }
+
+    /* <p> dans les rectangles de choix */
+    p {
+        font-size: var(--p-size);
+        width: 57vw;
+    }
+
+    /* <h3> dans les rectangles de choix */
+    h3 {
+        font-size: var(--h3-size);
+    }
+
+    /* Images dans les rectangles de choix */
+    .choix_client img {
+        height: 125px;
+        width: 125px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    /* Texte dans les rectangles de choix */
+    .texte {
+        padding: 15px;
+    }
+
+    /* <p> dans les rectangles de choix */
+    p {
+        font-size: 0.8em;
+        margin-top: 5px;
+        width: 80vw;
+    }
+
+    /* <h3> dans les rectangles de choix */
+    h3 {
+        font-size: var(--h3-size);
+    }
+
+    .choix_proprio, .choix_client {
+        flex-direction: column;
+    }
+
+    /* Images dans les rectangles de choix */
+    .choix_client img {
+        height: 125px;
+        width: 125px;
+    }
+    
+    /* titre de la page */
+    .titre_page h2 {
+        font-size: var(--h3-size);
+    }
+
+    .inscription h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 310px) {
+
+    .titre_page h2 {
+        font-size: var(--p-size);
+    }
+
+    .inscription h2 {
+        font-size: 1em;
+    }
+
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+.choix_client:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+  

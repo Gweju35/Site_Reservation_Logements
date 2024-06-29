@@ -1,0 +1,3 @@
+docker image build -t php8.2-sae3
+
+docker container run -v C:\Users\yannl\Documents\Cours\SAE\web\SAE_2A:/var/www -p 8888:80 php8.2-sae3

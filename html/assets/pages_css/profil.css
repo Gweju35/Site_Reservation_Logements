@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+main {
+    min-height: 200px;
+    margin-top: 220px;
+}
+
+p {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+/*c'est le conteneur de tout le bloc des informations du profil
+Il permet de centrer le bloc sur la page*/
+.profil {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10em;
+}
+
+/*C'est le cadre bleu du bloc des informations du profil,
+il définit la taille du bloc, la couleur des éléments à l'intérieur,
+la police, et la bordure*/
+.case_profil{
+    font-weight: bold;
+    color : var(--main-blue);
+    background-color: rgba(10, 55, 130, 0.2);
+    border: solid 1px var(--main-blue);
+    border-radius: 10px;
+    width: 70%;
+    height: 40em;
+}
+
+/*Regroupe le nom, prénom, pseudo et le type d'utilisateur de l'utilisateur, affiché à côté de la photo de profil*/
+.identite {
+    margin-left: 7em;
+    margin-top: 1em;
+    font-size: 30px;
+}
+
+/*Selectionne précisemment le nom et prenom pour lui donner une taille plus grande et une police en gras*/
+.prenom_nom{
+    font-family: 'Montserrat-Bold',sans-serif;
+    font-size: 46px;
+}
+
+/*C'est l'entiereté de la photo de profil, le rond contenant la photo, la bordure, la position sur la page et les couleurs*/
+.photo_de_profil {
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+    width: 18em;
+    height: 18em;
+    border: solid 5px var(--main-blue);
+    position: absolute;
+    top: -8em;
+    left: 8em;
+}
+
+/*Selctionne les lignes comme le lieu de vie, le nb de logements ou de reservations, le nb d'avis et les langues parlées. On les décale du bord du bloc*/
+.infos_secondaires {
+    margin-top: 4em;
+}
+
+/*Gère la couleur et l'écart des icons dans les infos secondaires*/
+.infos_secondaires span {
+    filter: none;
+    margin-right: 1em;
+}
+
+/*Permet d'aligner les icones et les lignes de texte des infos secondaires, de définir la taille de police et de les positionner correctement dans le bloc*/
+.infos_secondaires > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    font-size: 30px;
+}
+
+/*Propre aux icones hotel et language, les icones sont plus grandes que les autres par défaut donc on réduit leur taille*/
+.icon.hotel, .icon.language {
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 1.15em;
+}
+
+/*Centre les boutons en bas du bloc*/
+.profil_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+}
+
+/*Définit une taille commune aux boutons et la taille des caractères sur le bouton.*/
+.profil_button input {
+    width: 14em;
+    margin-top: 1.8em;
+    font-size: 30px;
+}
+
+.api {
+    position: absolute;
+    top: 0;
+    right: 17%;
+}
+
+.api .button_form {
+    width: unset;
+    padding: 10px 50px;
+}
+
+.api input {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 1440px) {
+
+    .profil {
+        margin-top: 9em;
+    }
+
+    .case_profil {
+        height: 37em;
+    }
+
+    .photo_de_profil {
+        width: 14em;
+        height: 14em;
+        top: -7em;
+        left: 7em;
+    }
+
+    .modifier_compte .button_form, .deconnexion .button_form {
+        width: 15em;
+        padding: 10px 5px;
+    }
+
+    .modifier_compte input, .deconnexion input {
+       width: unset;
+       font-size: 1.5em;
+    }
+
+    .identite {
+        font-size: 1.5em;
+    }
+
+    .prenom_nom {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1190px) {
+
+    .case_profil {
+        height: 34em;
+    }
+
+    .photo_de_profil {
+        width: 12em;
+        height: 12em;
+        top: -6em;
+        left: 6em;
+    }
+
+    .modifier_compte .button_form, .deconnexion .button_form {
+        width: 13em;
+        padding: 10px 8px;
+    }
+
+    .modifier_compte input, .deconnexion input {
+       width: unset;
+       font-size: 1.4em;
+    }
+
+    .identite {
+        font-size: 1.2em;
+        margin-left: 8em;
+    }
+
+    .api {
+        top: -15px;
+    }
+
+    
+    
+}
+
+
+@media (max-width: 1024px) {
+
+    .profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: initial;
+        position: static;
+        margin-top: -7em;
+    }
+
+    .case_profil{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: initial;
+        background-color: rgba(10, 55, 130, 0.2);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 30px;
+        width: unset;
+        height: unset;
+        width: 75%;
+        height: 34em;
+    }
+
+    .photo_de_profil {
+        border-radius: 50%;
+        width: 8em;
+        height: 8em;
+        border: solid 4px var(--main-blue);
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .identite {
+        margin: 0; 
+    }
+
+    .identite h2 {
+        font-size: 1.3rem;
+    }
+
+    .identite p {
+        font-size: 1.1rem;
+    }
+
+    .infos_secondaires {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .infos_secondaires p {
+        font-size: 1.1rem;
+    }
+
+    .infos_secondaires div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+
+    .icon.hotel, .icon.language, .icon.pin, .icon.nb_avis {
+        margin: 0 10px 0 0;
+        height: 30px;
+        width: 30px;
+    }
+
+    .profil_button {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .profil_button input {
+        padding: 10px 3px;
+        margin-top: 0;
+        font-size: 0.9rem;
+        border: solid 1px var(--main-blue);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .modifier_compte {
+        position: absolute;
+        bottom: 420px;
+        right: 17%;
+    }
+
+    .deconnexion .button_form {
+        height: 50px;
+    }
+
+    .deconnexion input {
+        font-size: 1.2rem;
+    }
+
+    .api {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .case_profil{
+        padding: 25px;
+        height: 29em;
+        width: 80%;
+    }
+
+    .photo_de_profil {
+        width: 6em;
+        height: 6em;
+        border: solid 3px var(--main-blue);
+    }
+
+    .identite h2 {
+        font-size: 1.1rem;
+    }
+
+    .identite p, .infos_secondaires p {
+        font-size: 0.9rem;
+    }
+
+    .icon.hotel, .icon.language, .icon.pin, .icon.nb_avis {
+        height: 25px;
+        width: 25px;
+    }
+
+    .profil_button input {
+        padding: 10px 3px;
+    }
+
+    .modifier_compte input {
+        font-size: 0.8rem;
+    }
+
+    .deconnexion .button_form {
+        height: unset;
+        padding: 10px;
+    }
+
+    .deconnexion input {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .case_profil{
+        border-radius: 20px;
+        padding: 25px;
+        height: 26em;
+    }
+
+    .photo_de_profil {
+        width: 5em;
+        height: 5em;
+        border: solid 2px var(--main-blue);
+    }
+
+    .identite h2 {
+        font-size: 0.9rem;
+    }
+
+    .identite p, .infos_secondaires p {
+        font-size: 0.8rem;
+    }
+
+    .icon.hotel, .icon.language, .icon.pin, .icon.nb_avis {
+        height: 20px;
+        width: 20px;
+    }
+
+    .modifier_compte input {
+        font-size: 0.7rem;
+    }
+
+    .deconnexion .button_form {
+        height: unset;
+        padding: 10px;
+    }
+
+    .deconnexion input {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .case_profil{
+        border-radius: 20px;
+        padding: 15px;
+        height: 24em;
+    }
+
+    .icon.hotel, .icon.language, .icon.pin, .icon.nb_avis {
+        height: 15px;
+        width: 15px;
+    }
+
+    .profil_button input {
+        width: unset;
+    }
+
+    .modifier_compte {
+        bottom: 430px;
+    }
+
+    .modifier_compte .button_form {
+        padding: 10px 8px;
+    }
+
+    .modifier_compte input {
+        font-size: 0.65rem;
+    }
+
+    .deconnexion .button_form {
+        height: unset;
+        padding: 10px 25px;
+    }
+
+    .deconnexion input {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 426px) {
+
+    .case_profil{
+        padding: 20px;
+        height: 23em;
+        width: 90%;
+        background-color: white;
+    }
+
+    .modifier_compte {
+        right: 13%;
+    }
+
+    .photo_de_profil {
+        width: 4.5em;
+        height: 4.5em;
+        border: solid 2px var(--main-blue);
+    }
+
+    .modifier_compte .button_form {
+        padding: 7px 7px;
+    }
+
+    .modifier_compte input {
+        font-size: 0.55rem;
+    }
+
+    .deconnexion .button_form {
+        padding: 10px 25px;
+    }
+
+    .deconnexion input {
+        font-size: 0.7rem;
+    }
+ 
+}
+
+@media (max-width: 350px) {
+
+    .case_profil{
+        padding: 15px;
+        height: 22em;
+    }
+
+    .photo_de_profil {
+        width: 4em;
+        height: 4em;
+    }
+
+    .modifier_compte .button_form {
+        padding: 7px 5px;
+    }
+
+    .modifier_compte input {
+        font-size: 0.5rem;
+    }
+
+    .deconnexion .button_form {
+        padding: 7px 20px;
+    }
+
+    .deconnexion input {
+        font-size: 0.6rem;
+    }
+ 
+}
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

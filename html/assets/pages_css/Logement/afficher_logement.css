@@ -1,0 +1,1293 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('../fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('../fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('../fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('../fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('../fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('../fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('../fonts/Sanchez-Regular.ttf');
+}
+
+/* POLICES */
+
+.titre_page {
+    padding : 20px 10px 14px 10px;
+}
+
+.button_modif {
+    margin: 1em;
+}
+
+.titre_page h2{
+    width: auto;
+}
+
+.infos_complementaires>div>span.icon {
+    filter: var(--icon-color-main-blue) !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+div#group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+h2 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+    width: 22em;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    font-size: 1.5em;
+}
+
+#left_part {
+    max-width: 50%;
+}
+
+#separation_point {
+    font-size: 1.5em;
+}
+
+.note{
+    font-size: 1.5em;
+}
+
+#lieu_logement {
+    
+    font-size: 1.7em;
+    align-items: center;
+}
+
+#log_avis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+
+#voir_profil {
+    text-decoration: underline black;
+    color: black;
+    font-size: 1em;
+}
+
+.description{
+    font-size: 1.3em;
+}
+
+#description {
+    display: flex;
+    margin-top: 1em;
+    position: relative;
+    max-width: 95%;
+}
+
+#description h3 {
+    color: var(--beige);
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.2em;
+
+}
+
+#description>div {
+    background-color: var(--secondary-blue);
+    border-radius: var(--radius-size);
+    padding: 0.5em;
+    margin-left: 0em;
+    min-height: 5em;
+    width: 100%;
+}
+
+#description>div h2, p {
+    word-wrap: break-word;
+}
+
+#description>div>#txt_description {
+    font-size: 0.8em;
+    color: var(--beige);
+    font-family: 'Montserrat-Regular', sans-serif;
+    
+}
+
+#photo_profil {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -0.5em;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 11.66px solid var(--secondary-blue); 
+    transform: rotate(45deg);
+    position: relative;
+    left: 0.5em; 
+    top: -0.1em; 
+    display: inline-block; /* Permet au triangle de s'aligner correctement avec le texte */
+}
+
+
+hr {
+    border: solid 1px;
+    color: #D9D9D9;     /*Définit la couleur, la largeur et la longueur de la ligne de séparation*/
+    width: auto;
+    margin-top: 2em;
+}
+
+
+
+
+
+
+.infos_comp_et_bloc_reserve {       /*Conteneur qui permet d'espacer correctement les blocs à l'intérieur*/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.infos_complementaires {
+    display: flex;
+    flex-wrap: wrap;            /*conteneur du bloc d'infos complémentaires. définit la taille et la marge du bas*/
+    width: 45em;
+    margin-bottom: 1.5em;
+}
+
+#titre_info_comp {
+    font-size: 1.8em;       /*taille de police du titre*/
+    margin-bottom: 1em;
+}
+
+.infos_complementaires>div {
+    color: var(--main-blue);
+    border: solid 2px var(--main-blue);     
+    border-radius: var(--radius-size);
+    margin: 0em 0.5em 0.5em 0em;
+    padding: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos_complementaires>div>span {       /*icones du nb chambre ou lits etc..*/
+    margin-right: 0.4em;            
+}
+
+.infos_complementaires>div>p {
+    font-family: 'Montserrat-medium', sans-serif;
+}
+
+
+.dispo_list {
+    background-color: white;
+    border-radius: var(--radius-size);   
+    width: 37em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.dispo_list p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+}
+
+.titres_dispo_list {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-variant: small-caps;                       /*Police, couleur et marges des titres aménagement, installation, services et équipements*/
+    color: var(--main-blue);
+    margin-bottom: 0.8em;
+    margin-top: 0.4em;
+}
+
+.dispo_list>div>div>div {
+    border-radius: 5px;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-between;             /*taille, alignement, marge et bordure d'une ligne dans les services, installations, aménagement etc..*/
+    align-items: center;
+    width: 12em;
+    height: 2.5em;
+    margin-bottom: 0.8em;
+}
+
+.dispo_list>div>div>div>span.checkmark {
+    filter: none;
+    width: 20px;                            /*Taille et couleur des icones*/
+    height: 20px;
+}
+
+.dispo_list>div>div>div>span.crossmark {
+    filter: none;                           /*Taille et couleur des icones*/
+    width: 20px;
+    height: 20px;
+     
+}
+
+
+.dispo_list .checked {
+    background-color: var(--secondary-blue);        /*Couleur des serives activés*/
+    color: var(--beige);
+}
+
+.dispo_list .crossed {
+    background-color: var(--background-color);      /*Couleur des serives désactivés*/
+    color: var(--secondary-blue);
+}
+
+
+
+.bloc_reserver {
+    border: solid 2px var(--main-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius-size);      /*définit la bordure, les couleurs, la taille, la centralisation des éléments et la position du bloc*/
+    background-color: white;
+    width: 37em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_reserver h3{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: var(--main-blue);
+}
+
+.bloc_reserver_tkt {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.reserver_button {
+    width: 20em;
+}
+
+
+
+.container_carousel{
+    width: fit-content;
+    max-width: 45em;
+    
+}
+
+.container_carousel_bloc_reserver{
+    height: min-content;
+    position: sticky;
+    top: 2.5em;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.carousel {
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius-size);
+}
+
+.slider {
+    height: 85%;
+    display: flex;
+    width: max-content;
+    transition: all 0.3s;
+    
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider section img {
+    border-radius: var(--radius-size);
+    height: 100%;
+    width: 45em;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 87%;
+}
+
+.arrow.left {
+    left: 13em;
+}
+
+.arrow.right {
+    right: 13em;
+}
+
+.controls span{
+    width: 30px;
+    height: 30px;
+    filter: none;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 12px;
+    height: 12px;
+    border: solid 2px #333;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background-color: #333;
+}
+
+
+/* permet d'enlver le style du bouton du submit et le remplacer par un texte */
+.visite_profil{
+    border: none;
+    text-decoration: underline;
+    cursor: pointer; /* rendre la souris en mode clique */
+}
+
+/* change la couleur au moment du survol */
+.visite_profil:hover{
+    color: gray;
+}
+
+/* La section AVIS */
+.avis{
+    margin-top: 2em;
+    margin-bottom: 4em;
+    width: 30em;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.photo_de_profil{
+    height: 5em;
+    width: 5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.liste_avis{
+    margin-left: 1.5vw;
+}
+
+.user{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.fa-star, .fa-star-half-alt{
+    color:gold;
+}
+
+h1{
+    text-align: center;
+}
+
+.rating.no-color {
+    font-size: 0.8em;
+}
+
+.rating.no-color label i {
+    color: grey; /* Couleur grise pour les étoiles inactives */
+}
+
+.rating.no-color input[type="radio"]:checked ~ label i {
+    color: gold; 
+}
+
+.rating.no-color input[type="radio"]:hover ~ label i {
+    color: gold; 
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    padding: 0.2em;
+    font-size: 1.3em;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.commentaire {
+    margin-top: 0.5em;
+    min-width: 40em;
+    max-width: 40em;
+    min-height: 5em;
+    max-height: 10em;
+    padding: 0.5em 0.5em 0.5em;
+    font-size: 1.3em;
+}
+
+/* -------------------------------------- MEDIA QUERIES -------------------------------------- */
+
+@media screen and (max-width:1520px) {
+    .slider>section>img {
+        width: 35em;
+        object-fit: cover;
+        height: 80%;
+    }
+    .controls .left {
+        left: 7em;
+    }
+
+    .controls .right {
+        right: 7em;
+    }
+
+    .controls .arrow, .controls ul {
+        top: 78%;
+    }
+
+    .container_carousel {
+        width: 35em;
+    }
+}
+
+@media screen and (max-width:1344px) {
+    section>article>div.bloc_reserver {
+        margin-top: 2em;
+        margin-bottom: 4em;
+        top: 0em;
+    }
+    .infos_complementaires {
+        justify-content: flex-start;
+        width: 32em;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    div#group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    div#infos_principales h2 {
+        width: auto;
+    }
+
+    #left_part {
+        width: 500px;
+        max-width: none;        
+    }
+
+    .dispo_list {
+        width: 31em;
+    }
+
+    
+}
+
+@media screen and (max-width:900px) {
+    .dispo_list_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dispo_list {
+        width: 40em;
+    }
+
+    
+}
+
+@media screen and (max-width:800px) {
+    .dispo_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30em;
+    }
+
+
+    .infos_complementaires {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .slider>section>img {
+        width: 24em;
+    }
+
+    .carousel {
+        height: 20em;
+    }
+
+    .bloc_reserver {
+        width: 18em;
+    }
+
+    .reserver_button {
+        width: 11em;
+    }
+
+    .container_carousel {
+        width: 24em;
+    }
+
+    .controls .left {
+        left: 3.5em;
+    }
+
+    .controls .right {
+        right: 3.5em;
+    }
+
+    .controls ul li {
+        margin: 7px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    #left_part {
+        width: 300px;
+    }
+
+    .dispo_list {
+        width: 300px;
+    }
+    main {
+        margin: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width:415px) {
+    .slider>section>img {
+        width: 20em;
+    }
+
+    .carousel {
+        height: 16em;
+    }
+
+    .container_carousel {
+        width: 20em;
+    }
+
+    .controls .left {
+        left: 2.5em;
+    }
+
+    .controls .right {
+        right: 2.5em;
+    }
+}
+ 
+.button_modif {
+    margin: 1em;
+}
+
+.infos_complementaires>div>span.icon {
+    filter: var(--icon-color-main-blue) !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+div#group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+h2 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+    width: 22em;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    font-size: 1.5em;
+}
+
+#left_part {
+    max-width: 50%;
+}
+
+#separation_point {
+    font-size: 1.5em;
+}
+
+.note{
+    font-size: 1.5em;
+}
+
+#lieu_logement {
+    color: var(--main-blue);
+    font-size: 1.7em;
+    align-items: center;
+}
+
+#log_avis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+
+#voir_profil {
+    text-decoration: underline black;
+    color: black;
+    font-size: 1em;
+
+}
+
+#description {
+    display: flex;
+    margin-top: 1em;
+    position: relative;
+    max-width: 95%;
+}
+
+#description h3 {
+    color: var(--beige);
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.2em;
+
+}
+
+#description>div {
+    background-color: var(--secondary-blue);
+    border-radius: var(--radius-size);
+    padding: 0.5em;
+    margin-left: 0em;
+    min-height: 5em;
+    width: 100%;
+}
+
+#description>div h2, p {
+    word-wrap: break-word;
+}
+
+#description>div>#txt_description {
+    font-size: 0.8em;
+    color: var(--beige);
+    font-family: 'Montserrat-Regular', sans-serif;
+    
+}
+
+#photo_profil {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -0.5em;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 11.66px solid var(--secondary-blue); 
+    transform: rotate(45deg);
+    position: relative;
+    left: 0.5em; 
+    top: -0.1em; 
+    display: inline-block; /* Permet au triangle de s'aligner correctement avec le texte */
+}
+
+
+hr {
+    border: solid 1px;
+    color: #D9D9D9;     /*Définit la couleur, la largeur et la longueur de la ligne de séparation*/
+    width: auto;
+    margin-top: 2em;
+}
+
+
+
+
+
+
+.infos_comp_et_bloc_reserve {       /*Conteneur qui permet d'espacer correctement les blocs à l'intérieur*/
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.infos_complementaires {
+    display: flex;
+    flex-wrap: wrap;            /*conteneur du bloc d'infos complémentaires. définit la taille et la marge du bas*/
+    width: 45em;
+    margin-bottom: 1.5em;
+}
+
+#titre_info_comp {
+    font-size: 1.8em;       /*taille de police du titre*/
+    margin-bottom: 1em;
+}
+
+.infos_complementaires>div {
+    color: var(--main-blue);
+    border: solid 2px var(--main-blue);     
+    border-radius: var(--radius-size);
+    margin: 0em 0.5em 0.5em 0em;
+    padding: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos_complementaires>div>span {       /*icones du nb chambre ou lits etc..*/
+    margin-right: 0.4em;            
+}
+
+.infos_complementaires>div>p {
+    font-family: 'Montserrat-medium', sans-serif;
+}
+
+
+.dispo_list {
+    background-color: white;
+    border-radius: var(--radius-size);   
+    width: 37em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.dispo_list p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+}
+
+.titres_dispo_list {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-variant: small-caps;                       /*Police, couleur et marges des titres aménagement, installation, services et équipements*/
+    color: var(--main-blue);
+    margin-bottom: 0.8em;
+    margin-top: 0.4em;
+}
+
+.dispo_list>div>div>div {
+    border-radius: 5px;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-between;             /*taille, alignement, marge et bordure d'une ligne dans les services, installations, aménagement etc..*/
+    align-items: center;
+    width: 12em;
+    height: 2.5em;
+    margin-bottom: 0.8em;
+}
+
+.dispo_list>div>div>div>span.checkmark {
+    filter: none;
+    width: 20px;                            /*Taille et couleur des icones*/
+    height: 20px;
+}
+
+.dispo_list>div>div>div>span.crossmark {
+    filter: none;                           /*Taille et couleur des icones*/
+    width: 20px;
+    height: 20px;
+     
+}
+
+
+.dispo_list .checked {
+    background-color: var(--secondary-blue);        /*Couleur des serives activés*/
+    color: var(--beige);
+}
+
+.dispo_list .crossed {
+    background-color: var(--background-color);      /*Couleur des serives désactivés*/
+    color: var(--secondary-blue);
+}
+
+
+
+.bloc_reserver {
+    border: solid 2px var(--main-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius-size);      /*définit la bordure, les couleurs, la taille, la centralisation des éléments et la position du bloc*/
+    background-color: white;
+    width: 37em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_reserver h3{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: var(--main-blue);
+}
+
+.bloc_reserver_tkt {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.reserver_button {
+    width: 20em;
+}
+
+
+
+.container_carousel{
+    width: fit-content;
+    max-width: 45em;
+    
+}
+
+.container_carousel_bloc_reserver{
+    height: min-content;
+    position: sticky;
+    top: 2.5em;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.carousel {
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius-size);
+}
+
+.slider {
+    height: 85%;
+    display: flex;
+    width: max-content;
+    transition: all 0.3s;
+    
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider section img {
+    border-radius: var(--radius-size);
+    height: 100%;
+    width: 45em;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 87%;
+}
+
+.arrow.left {
+    left: 13em;
+}
+
+.arrow.right {
+    right: 13em;
+}
+
+.controls span{
+    width: 30px;
+    height: 30px;
+    filter: none;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 12px;
+    height: 12px;
+    border: solid 2px #333;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background-color: #333;
+}
+
+
+/* permet d'enlver le style du bouton du submit et le remplacer par un texte */
+.visite_profil{
+    border: none;
+    text-decoration: underline;
+    cursor: pointer; /* rendre la souris en mode clique */
+}
+
+/* change la couleur au moment du survol */
+.visite_profil:hover{
+    color: gray;
+}
+
+/* La section AVIS */
+.avis{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.photo_de_profil{
+    height: 5em;
+    width: 5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.liste_avis{
+    margin-left: 1.5vw;
+}
+
+.user{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.fa-star, .fa-star-half-alt{
+    color:gold;
+}
+
+h1{
+    text-align: center;
+}
+
+#modif_avis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30em;
+    padding-bottom: 1em;
+}
+
+.etoile{
+    font-size: 1.5em;
+}
+
+#etoile_et_p {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+#boutton{
+    display: flex;
+    justify-content: space-between;
+    width: 35em;
+}
+
+#boutton_v2{
+    display: flex;
+    justify-content: space-between;
+    width: 42.3em;
+} 
+
+.avis .button_form{
+    padding: 0.05em 1em;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.far{
+    padding: 0.1em;
+}
+/* -------------------------------------- MEDIA QUERIES -------------------------------------- */
+
+@media screen and (max-width:1520px) {
+    .slider>section>img {
+        width: 35em;
+        object-fit: cover;
+        height: 80%;
+    }
+    .controls .left {
+        left: 7em;
+    }
+
+    .controls .right {
+        right: 7em;
+    }
+
+    .controls .arrow, .controls ul {
+        top: 78%;
+    }
+
+    .container_carousel {
+        width: 35em;
+    }
+}
+
+@media screen and (max-width:1344px) {
+    section>article>div.bloc_reserver {
+        margin-top: 2em;
+        margin-bottom: 4em;
+        top: 0em;
+    }
+    .infos_complementaires {
+        justify-content: flex-start;
+        width: 32em;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    div#group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    div#infos_principales h2 {
+        width: auto;
+    }
+
+    #left_part {
+        width: 500px;
+        max-width: none;        
+    }
+
+    .dispo_list {
+        width: 31em;
+    }
+
+    
+}
+
+@media screen and (max-width:900px) {
+    .dispo_list_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dispo_list {
+        width: 40em;
+    }
+
+    
+}
+
+@media screen and (max-width:800px) {
+    .dispo_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30em;
+    }
+
+
+    .infos_complementaires {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .slider>section>img {
+        width: 24em;
+    }
+
+    .carousel {
+        height: 20em;
+    }
+
+    .bloc_reserver {
+        width: 18em;
+    }
+
+    .reserver_button {
+        width: 11em;
+    }
+
+    .container_carousel {
+        width: 24em;
+    }
+
+    .controls .left {
+        left: 3.5em;
+    }
+
+    .controls .right {
+        right: 3.5em;
+    }
+
+    .controls ul li {
+        margin: 7px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    #left_part {
+        width: 300px;
+    }
+
+    .dispo_list {
+        width: 300px;
+    }
+    main {
+        margin: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width:415px) {
+    .slider>section>img {
+        width: 20em;
+    }
+
+    .carousel {
+        height: 16em;
+    }
+
+    .container_carousel {
+        width: 20em;
+    }
+
+    .controls .left {
+        left: 2.5em;
+    }
+
+    .controls .right {
+        right: 2.5em;
+    }
+}
+ 
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+.icon_arrow-left_arrow_left:focus,
+.icon_arrow-left_arrow_right:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('../fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('../fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('../fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+}
+
+/* logo */
+main img {
+    width: 20vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+
+/* "Nom d'utilisateur" "Mot de passe" */
+label {
+    font-size: var(--h3-size);
+    font-family: "familjen-grotesk-bold", sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+
+/* input */
+#mot_de_passe, #login {
+    font-family: 'Montserrat-Semibold', sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #0A3782;
+    height: 6.5vh;
+    width: 30vw;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-style: normal;
+    color: black;
+    padding: 5px;
+    font-size: var(--h3-size);
+}
+
+#mot_de_passe {
+    letter-spacing: 0.1em;
+}
+
+/* lien mdp oublié */
+.mdp_oublie {
+    font-family: "familjen-grotesk-regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--p-size);
+    text-decoration-line: underline;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: -1vh;
+    margin-bottom: 1vh;
+    pointer-events: none;
+}
+
+/* bouton connexion */
+.button_form {
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+/* conteneur de login et mdp*/
+.container_connexion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* conteneur login et conteneur mdp*/
+.container_login, .container_mdp {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+
+/* créer un compte */
+.create_account {
+    font-family: "familjen-grotesk-medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--p-size);
+    text-decoration: underline;
+    color: black;
+}
+
+footer {
+    margin-top: 5em;
+}
+
+@media screen and (max-width: 769px) {
+    label {
+        font-size: var(--p-size);
+    }
+
+    #mot_de_passe, #login {
+        border: 1.5px solid #0A3782;
+        height: 6vh;
+        border-radius: 6px;
+        font-size: var(--p-size);
+    }
+
+    .mdp_oublie {
+        font-size: 0.85em;
+    }
+
+    .button_form {
+        margin: 15px 0px;
+        padding: 4px;
+        border-radius: 6px;
+        font-size: var(--p-size);
+    }
+
+    .container_login, .container_mdp {
+        margin: 8px 0px;
+    }
+
+    .create_account {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 426px) { 
+    main img {
+        width: 30vw;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    #mot_de_passe, #login {
+        height: 5vh;
+        border-radius: 5px;
+        font-size: 0.75em;
+        width: 200px;
+    }
+
+    .mdp_oublie {
+        font-size: 0.75em;
+    }
+
+    .button_form {
+        margin: 10px 0px;
+        padding: 3px 30px;
+        border-radius: 6px;
+        font-size: 0.75em;
+    }
+
+    .container_login, .container_mdp {
+        margin: 8px 0px;
+    }
+
+    .create_account {
+        font-size: 0.85em;
+    }
+
+    footer {
+        margin-top: 0em;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

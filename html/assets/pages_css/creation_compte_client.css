@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('../fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+/* conteneur du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-blue);
+    margin-top: 20px
+}
+
+/* 1 Champ d'inscription */
+.champ_inscription {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+
+/* 2 Champs d'inscription */
+.champ_inscription2 {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+
+/* ligne de séparation entre 2 champs */
+.champ_inscription2 hr {
+    border: none;
+    height: 2px;
+    background-color: var(--main-blue);
+    margin: 10px -15px;
+}
+
+/* 3 Champs d'inscription */
+.champ_inscription3 {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+
+/* ligne de séparation entre 3 champs */
+.champ_inscription3 hr {
+    border: none;
+    height: 2px;
+    background-color: var(--main-blue);
+    margin: 0px -15px 15px -15px;
+}
+
+
+
+/* nom du champ */
+label {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--p-size);
+    margin-bottom: 2px;
+}
+
+/* select de civilité + input du user */
+select, input {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--h3-size);
+    border: none;
+}
+
+/* select de civilité */
+select {
+    width: 9vw;
+    margin-left: -5px;
+}
+
+/* champ photo de profil */
+#photo_de_profil {
+    padding-bottom: 15px;
+}
+
+/* conteneur du bouton confirmer */
+.button_form {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: var(--h3-size);
+}
+
+/* bouton confirmer inscription */
+.bouton_confirmer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*
+.popup .close-btn {
+    content: url(../ressources/icons/left-arrow.svg);
+    position: absolute;
+    cursor: pointer;
+    left: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--main-blue);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+}*/
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--main-blue);
+}
+
+.popup h1 {
+    color: var(--main-blue);
+}
+
+.popup .button_form {
+    margin-top: 3em;
+}
+
+.alignement_mdp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.alignement_mdp label {
+    margin-right: 7px;
+}
+
+.alignement_mdp p {
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 1307px) {
+    select {
+        width: 9vw;
+    }
+
+    option {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    select {
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    select {
+        width: 15vw;
+    }
+
+    .alignement_mdp {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    select {
+        width: 17vw;
+    }
+
+    option {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    select {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    select {
+        width: 25vw;
+    }
+
+    .champ_inscription, .champ_inscription2, .champ_inscription3 {
+        border: solid var(--main-blue) 2px;
+        padding: 10px 10px 0 10px;
+        margin: 15px;
+        border-radius: 7px;
+        width: 70vw;
+    }
+
+    .champ_inscription2 hr {
+        margin: 10px -10px; 
+    }
+
+    .champ_inscription3 hr {
+        margin: 0px -10px 15px -10px;
+    }
+
+    label {
+        font-size: var(--p-size);
+    }
+    
+    select, input {
+        font-size: var(--p-size);
+    }
+
+    .button_form {
+        padding: 10px 25px;
+        font-size: var(--h3-size);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    select {
+        width: 30vw;
+    }
+
+    .champ_inscription, .champ_inscription2, .champ_inscription3 {
+        border: solid var(--main-blue) 2px;
+        padding: 10px 10px 0 10px;
+        margin: 15px;
+        border-radius: 7px;
+        width: 80vw;
+    }
+
+    .champ_inscription2 hr {
+        margin: 10px -10px; 
+    }
+
+    .champ_inscription3 hr {
+        margin: 0px -10px 15px -10px;
+    }
+    
+    select, input, label {
+        font-size: 0.9em;
+    }
+
+    .button_form {
+        padding: 10px 25px;
+        font-size: var(--h3-size);
+    }
+
+    .alignement_mdp p {
+        font-size: 0.6em;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    select {
+        width: 35vw;
+    }
+}
+
+
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+.outline:active,
+.outline:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

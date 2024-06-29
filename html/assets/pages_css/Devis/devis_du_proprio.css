@@ -1,0 +1,214 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+/* CSS DE LA PAGE */
+/* mise en place de la police*/
+p{
+    font-family: 'Montserrat-Semibold', sans-serif;
+}
+
+
+/* remidmension des boutons */
+.button_form{
+    padding: 5px 30px;
+    margin: 10px 0px 10px 10px;
+    justify-content: flex-end;
+}
+
+/*positionnnement de la page*/
+.contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*bodure du tableau*/
+.table_facture, td, th, tr {
+    border: 2px solid var(--main-blue);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/*police du tableau*/
+.table_facture{
+    font-family: 'Montserrat-Semibold', sans-serif;
+}
+
+/* case en bleu */
+.case_table_color{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+/* Centrer le texte dans la tableau */
+.table_facture td:not(:first-child),
+.table_facture th:not(:first-child) {
+    text-align: center;
+}
+
+/* enlever le style des 3 premières cellules AIDE PLEASE*/
+.last-row{
+    border: none;
+}
+
+/* mettre à l'item a droite */
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* postion de la table avec les boutons */
+.position_table{
+    display: flex;
+    flex-direction: column;
+}
+
+/* modifier la position */
+.photo_text{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo_text p {
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+
+/* dimension de la photo de profil */
+.photo_de_profil{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* filtre pour montrer l'expiration */
+.contenu-indisponible {
+    background-color: #b2b2b2 ;
+}
+
+/* style pour le message "expire" */
+.message_important{
+    text-align: center;
+    font-size: larger;
+    color: rgb(249, 73, 73);
+    letter-spacing: 3vw;
+    font-weight: bold;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--main-blue);
+}
+.popup h1{
+    color: var(--main-blue);
+}
+
+.popup .button_form{
+    margin-top: 3em;
+}
+
+.sectionForm {
+    border: 3px solid var(--main-blue);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    padding: 1em 3em 1em;
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

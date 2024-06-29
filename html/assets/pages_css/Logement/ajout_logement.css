@@ -1,0 +1,226 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+/* CSS DE LA PAGE */
+/* mise en page */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* titre des champs */
+label {
+    color: var(--main-blue);
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+}
+
+/* mise en place de la police */
+input, textarea{
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+/* aligner la div dans la page */
+.aligner div{
+    position: relative;
+}
+
+.check_form input[type="checkbox"]{
+    margin: 0.5em;
+}
+
+/* Styles pour les cases à cocher cochées */
+.check_form input[type="checkbox"]:checked {
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+    background-color: var(--main-blue);
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+}
+
+/* Styles pour le texte à côté des cases à cocher */
+.check_form label {
+    margin-left: 1em;
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--main-blue);
+}
+
+.check_form input[type="number"]{
+    width: 60px;
+    margin-left: 0.5em;
+    padding-left: 5px;
+}
+
+.check_form p{
+    color: var(--main-blue);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.section_form{
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 15px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+
+.section_form .aligner input{
+    width: 15vw;
+}
+
+.section_form hr{
+    border: none;
+    height: 1.5px;
+    background-color: var(--main-blue); 
+    margin: 15px -15px 15px -15px;
+}
+
+.aligner {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+
+.section_form input[type="text"]{
+    padding-top: 1em;
+}
+
+.aligner .vertical-bar {
+    float: left;
+    height: 95px;
+    /* border-right: 1px solid var(--main-blue); */
+    border: solid 1px var(--main-blue);
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    background-color: var(--main-blue);
+}
+
+label {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--p-size);
+    margin-bottom: 2px;
+}
+
+/* select de civilité + input du user */
+select, input, textarea{
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--h3-size);
+    border: none;
+}
+
+.taille_champs_texarea{
+    min-width: 61.5vw;
+    max-width: 61.5vw;
+    min-height: 10vh;
+    max-height: 10em;
+}    
+
+.form_nbr{
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 15px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+.form_nbr .aligner input{
+    width: 15vw;
+}
+
+.form_nbr hr{
+    border: none;
+    height: 1.8px;
+    background-color: var(--main-blue); 
+    margin: 15px -15px 15px -15px;
+}
+
+.form_nbr input[type="number"]{
+    padding-top: 1em;
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+.taille_checkbox:focus {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+  
+.taille_checkbox:hover {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}

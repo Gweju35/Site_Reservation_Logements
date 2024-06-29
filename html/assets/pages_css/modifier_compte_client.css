@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('../fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+
+.conteneur_titre_back{
+    padding: 2em;
+}
+
+main {
+    margin-top: 70px;
+}
+
+/* conteneur du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color : var(--main-blue);
+}
+
+/* 1 Champ d'inscription */
+.champ_inscription {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+    padding-bottom: 1em;
+}
+
+/* 2 Champs d'inscription */
+.champ_inscription2 {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    opacity: 0.5;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+    padding-bottom: 1em;
+}
+
+/* ligne de séparation entre 2 champs */
+.champ_inscription2 hr {
+    border: none;
+    height: 2px;
+    background-color: var(--main-blue); 
+    opacity: 0.5;
+    margin: 10px -15px; 
+}
+/* Styles pour les inputs en mode lecture seule */
+input[readonly] {
+    color: var(--main-blue); 
+    border-color: var(--main-blue); 
+    opacity: 0.5;   
+}
+
+/* Styles pour les champs à grisés */
+.champ_inscription2 label {
+    color: var(--main-blue); 
+    border-color: var(--main-blue);  
+    opacity: 0.5;  
+}
+
+
+/* 3 Champs d'inscription */
+.champ_inscription3 {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+    padding-bottom: 1em;
+}
+
+/* ligne de séparation entre 3 champs */
+.champ_inscription3 hr {
+    border: none;
+    height: 2px;
+    background-color: var(--main-blue); 
+    margin: 15px -15px 15px -15px;
+}
+
+
+
+/* nom du champ */
+label {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--p-size);
+    margin-bottom: 2px;
+}
+
+/* select de civilité + input du user */
+select, input {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--h3-size);
+    border: none;
+}
+
+
+
+
+
+
+/* select de civilité */
+select {
+    width : 10vw;
+    margin-left: -5px;
+}
+
+/* champ photo de profil */
+#photo_de_profil {
+    padding-bottom: 15px;
+}
+
+.cercle_photo_profil {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    overflow: hidden;
+    width: 10vw;
+    height: 20vh;
+    border: solid black 2px;
+    border-radius: 50%;
+    
+}
+
+.photo_de_profil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* conteneur du bouton confirmer */
+.button_form {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: var(--h3-size);
+}
+
+/* bouton confirmer inscription */
+.bouton_confirmer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--main-blue);
+}
+.popup h1{
+    color: var(--main-blue);
+}
+
+.popup .button_form{
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 1307px) {
+    select {
+        width: 9vw;
+    }
+
+    option {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    select {
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    select {
+        width: 15vw;
+    }
+}
+
+@media (max-width : 768px) {
+    .cercle_photo_profil {
+        margin-bottom: 20px;
+        width: 130px;
+        height: 130px;
+    }
+    
+    select {
+        width: 17vw;
+    }
+    
+    option {
+        font-size: 0.6em;
+    }
+}	
+@media screen and (max-width: 680px) {
+    select {
+        width: 20vw;
+    }
+}
+
+@media (max-width : 600px) {
+    #compte_photo_profil_new, #proprietaire_photo_recto_new, #proprietaire_photo_verso_new {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    select {
+        width: 25vw;
+    }
+
+    .champ_inscription, .champ_inscription2, .champ_inscription3 {
+        border: solid var(--main-blue) 2px;
+        padding: 10px 10px 0 10px;
+        margin: 15px;
+        border-radius: 7px;
+        width: 70vw;
+    }
+
+    .champ_inscription2 hr {
+        margin: 10px -10px; 
+    }
+
+    .champ_inscription3 hr {
+        margin: 0px -10px 15px -10px;
+    }
+
+    label {
+        font-size: var(--p-size);
+    }
+    
+    select, input {
+        font-size: var(--p-size);
+    }
+
+    .button_form {
+        padding: 10px 25px;
+        font-size: var(--h3-size);
+    }
+}
+
+
+@media (max-width : 500px) {
+    #compte_photo_profil_new, #proprietaire_photo_recto_new, #proprietaire_photo_verso_new {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    select {
+        width: 30vw;
+    }
+
+    .champ_inscription, .champ_inscription2, .champ_inscription3 {
+        border: solid var(--main-blue) 2px;
+        padding: 10px 10px 0 10px;
+        margin: 15px;
+        border-radius: 7px;
+        width: 80vw;
+    }
+
+    .champ_inscription2 hr {
+        margin: 10px -10px; 
+    }
+
+    .champ_inscription3 hr {
+        margin: 0px -10px 15px -10px;
+    }
+    
+    select, input, label {
+        font-size: 0.9em;
+    }
+
+    .button_form {
+        padding: 10px 25px;
+        font-size: var(--h3-size);
+    }
+}
+
+@media (max-width : 425px) {
+    .cercle_photo_profil {
+        width: 100px;
+        height: 100px;
+        
+    }
+}	
+
+@media (max-width : 380px) {
+    #compte_photo_profil_new, #proprietaire_photo_recto_new, #proprietaire_photo_verso_new {
+        font-size: 0.7rem;
+    }
+
+    select {
+        width: 35vw;
+    }
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+

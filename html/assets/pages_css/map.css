@@ -1,0 +1,128 @@
+
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+
+
+.leaflet-popup-content {
+    width: 200px;
+}
+
+.l-popup-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-popup {
+    height: 100px;
+    width: 100%;
+}
+
+.l-popup-content .lieu {
+    width: 100%;
+    margin: 0;
+}
+
+.l-popup-content .prix {
+    width: 100%;
+    margin: 0;
+}
+
+.l-popup-content a {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 0.2em;
+}
+
+.l-popup-content a .button-goToAnnonce {
+    background-color: var(--main-blue);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+.l-popup-content a .button-goToAnnonce p {
+    margin: 0 !important;
+    color: white;
+}
+
+.marker-cluster {
+
+    border-radius: 50%; /* Forme du cluster (rond) */
+    text-align: center;
+    line-height: 36px; /* Hauteur du cluster */
+    font-size: 16px; /* Taille de la police */
+    color: #fff; /* Couleur du texte */
+}
+
+.marker-cluster div {
+    margin-left: 4px;
+    margin-top: 4px;
+    font: 12px 'familjen-grotesk-semibold';
+}
+
+.marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+    background-color: transparent;
+}
+
+.marker-cluster-small {
+    background-color: #0A3782; /* Exemple de couleur de fond pour un petit cluster */
+    color: #fff; /* Exemple de couleur de texte pour un petit cluster */
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+.marker-cluster-small:hover {
+    background-color: #0096CA;
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+.marker-cluster-medium {
+    background-color: #0A3782; /* Exemple de couleur de fond pour un cluster moyen */
+    color: #fff; /* Exemple de couleur de texte pour un cluster moyen */
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+.marker-cluster-medium:hover {
+    background-color: #0096CA;
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+.marker-cluster-large {
+    background-color: #0A3782; /* Exemple de couleur de fond pour un grand cluster */
+    color: #fff; /* Exemple de couleur de texte pour un grand cluster */
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+.marker-cluster-large:hover {
+    background-color: #0096CA;
+    border: 2px solid #0A3782; /* Bordure */
+}
+
+
+
+
+/* ---------------- Menus latéral Carte ---------------- */
+/* Icône de la flèche */
+.iconArrowCarte {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.5s ease;
+}
+
+/* Passez l'icone de la flèche dans l'autre sens */
+.sidenavCarte .iconArrowCarte { 
+    transform: rotate(180deg); 
+}
+
+/* Animation de la flèche quand on ouvre le menu */
+.sidenavCarte.active .iconArrowCarte {
+    transform: rotate(0deg);
+}
+

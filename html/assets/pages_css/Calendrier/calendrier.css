@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('../fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+.icon_btn_calendar_dl{
+    padding: 4px;
+    border-radius: var(--radius-size);
+    
+}
+
+.icon_btn_calendar_dl:hover {
+    fill: var(--secondary-blue);
+    background-color: var(--beige);
+    
+}
+
+.div_btn{
+    height: 100%;
+    width: 100%;
+    border-radius: var(--radius-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dl_calendar{
+    padding: 0em;
+    width: 3em;    
+}
+
+.box_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.choix_logement{
+    display: inline-block;
+}
+
+.all_thing_upper{
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    max-width: 700px;
+    width: 100%;
+    height: 370px;
+}
+
+.modal h2, .modal h3 {
+    font-family: "familjen-grotesk-medium", sans-serif;
+    color: var(--main-blue);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal h3 {
+    font-weight: 500;
+}
+
+#choixLogement_abo {
+    font-size: var(--h3-size);
+    color: var(--main-blue);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-family: "familjen-grotesk-medium", sans-serif;
+    color: var(--main-blue);
+    font-weight: 500;
+    font-size: var(--h3-size);
+}
+
+.modal h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.check_form input[type="checkbox"]{
+    margin: 0.5em;
+}
+
+.check_form {
+    margin-bottom: -20px;
+}
+
+/* Styles pour les cases à cocher cochées */
+.check_form input[type="checkbox"]:checked {
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+    background-color: var(--main-blue);
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+}
+
+.taille_checkbox:focus {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+  
+.taille_checkbox:hover {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+
+.button_form {
+    padding: 10px 30px;
+}
+
+#envoyer {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 75px);
+}

@@ -1,0 +1,467 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('./fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('./fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('./fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('./fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('./fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('./fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('./fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('./fonts/Sanchez-Regular.ttf');
+}
+
+/* CSS DE LA PAGE */
+h1{
+    text-align: center;
+}
+
+.liste_logement {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.logement {
+    background-color: white;
+    border-radius: var(--radius-size);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.image_logement {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    
+}
+
+.image_logement>img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infos_logement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    border-top: 2px solid var(--main-blue); 
+    border-bottom: 2px solid var(--main-blue); 
+    border-right: 2px solid var(--main-blue); 
+    border-radius: 0px 10px 10px 0px; 
+    padding: 1em;
+    position: relative;
+    color: black;
+}
+
+.reservation{
+    margin-left: 20px;
+    font-family: 'Montserrat-Semibold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 1em;
+}
+
+.accroche {
+    margin-left: 20px;
+    font-family: 'Montserrat-Semibold', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.photo_de_profil{
+    height: 6em;
+    width: 6em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 1.5vw;
+}
+
+.nombre_personne_max {
+    margin-left: 20px;
+    font-family: 'Montserrat-regular', sans-serif;
+    font-size: 20px;
+    bottom: 3em;
+}
+
+.prix_nuit {
+    margin-left: 20px;
+    font-family: 'Montserrat-regular'; 
+    font-size: 20px;
+    bottom: 1em;
+}
+
+.bouton_logement {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+/* modifier la position */
+.photo_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.photo_text p {
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.info_client{
+    margin-left: 20px;
+    font-family: 'Montserrat-Semibold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 1em;
+}
+
+.les_boutons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid var(--main-blue);
+    z-index: 2;
+    border-radius: var(--radius-size);
+    width: 40em;
+    height: 20em;
+}
+
+#tri {
+    border: 3px solid var(--main-blue);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    width: 30em;
+    padding: 1em 3em 1em;
+}
+
+#tri h3 {
+    margin-left: 5px;
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--main-blue);
+}
+
+.radio-group label {
+    margin-left: 5px;
+    font-family: 'familjen-grotesk-bold', sans-serif;
+    color: var(--main-blue);
+}
+
+#filtre_prix {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--main-blue) 3px;
+    padding: 15px 15px 0 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 65vw;
+}
+
+#filtre_prix label {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--p-size);
+    
+}
+
+#filtre_prix input {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: var(--main-blue);
+    font-size: var(--h3-size);
+    border: none;
+}
+
+#filtre_prix hr {
+    border: none;
+    height: 2px;
+    background-color: var(--main-blue);
+    margin: 10px -15px;
+}
+
+.overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+.popup2-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mesDevis {
+    position: absolute;
+    top: 85px;
+    right: 15px;
+}
+
+.filter {
+    position: absolute;
+    top: 130px;
+    right: 15px;
+}
+
+.mesDevis .button_form, .filter .filter-button {
+    width: 150px;
+    padding: 5px 10px;
+}
+
+
+.icon.filter{
+    height: 15px;
+    width: 15px;
+}
+
+.filter-button {
+    font-family: 'familjen-grotesk-semibold', sans-serif;
+    background-color: var(--secondary-blue);
+    color: var(--beige);
+    border-radius: var(--radius-size);
+    border: solid 2px var(--secondary-blue);
+    white-space: nowrap;
+    font-size: var(--h3-size);
+    margin: 15px;
+    width: 150px;
+    padding: 5px 10px;
+}
+
+.filter-button:hover {
+    color: var(--secondary-blue);
+    background-color: var(--beige);
+    border: solid 2px var(--secondary-blue);
+}
+
+.filter:active {
+    color: var(--secondary-blue);
+    background-color: var(--pressing);
+    border: solid 2px var(--secondary-blue);
+}
+
+#laissez_avis{
+    margin-top: 0.5em;
+    margin-left: 20px;
+}
+
+.commentaire {
+    margin-top: 0.5em;
+    min-width: 40em;
+    max-width: 40em;
+    min-height: 5em;
+    max-height: 10em;
+    padding: 0.5em 0.5em 0.5em;
+}
+
+.soumettre_avis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soumettre_avis .button_form{
+    width: 10em;
+    text-align: center;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    display: inline-block;
+    padding: 5px;
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: gold;
+} 
+
+.hidden {
+    display: none;
+}
+  
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .image_logement {
+        height: auto;
+        width: 40%;
+    }
+
+    .infos_logement {
+        width: 70%;
+    }
+
+    .reservation {
+        font-size: 21px;
+        margin-bottom: 0.7em;
+    }
+
+    .accroche {
+        font-size: 19px;
+        margin-bottom: 0.7em;
+    }
+
+    .bouton_logement .button_form {
+        padding: 5px 10px;
+    }
+
+    /*.photo_de_profil {
+        height: 6em;
+        width: 6em;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 1.5vw;
+    }
+
+    .nombre_personne_max {
+        font-size: 15px;
+        bottom: 3em;
+    }
+
+    .prix_nuit {
+        font-size: 15px;
+        bottom: 0.7em;
+    }
+
+    .photo_text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+
+    .photo_text p {
+        margin-top: 3vh;
+        margin-left: 3vw;
+    }
+
+    .info_client {
+        margin-left: 20px;
+        font-family: 'Montserrat-Semibold', sans-serif;
+        font-size: 26px;
+        margin-bottom: 1em;
+    }*/
+}
+
+
+
+@media (max-width:580px) {
+    .filter, .mesDevis {
+        position: static;
+        margin-left: -10px;
+        margin-bottom: -20px;
+    }
+
+    .mesDevis {
+        margin-top: 5px;
+    }
+
+    .filter {
+        margin-bottom: -60px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+input[type="hidden"][name="devis_id"] {
+    display: none;
+}

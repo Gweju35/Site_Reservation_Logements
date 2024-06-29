@@ -1,0 +1,160 @@
+/* POLICES */
+@font-face {
+    font-family: 'familjen-grotesk';
+    src: url('../fonts/FamiljenGrotesk-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-bold';
+    src: url('../fonts/FamiljenGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-boldItalic';
+    src: url('../fonts/FamiljenGrotesk-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-semibold';
+    src: url('../fonts/FamiljenGrotesk-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-medium';
+    src: url('../fonts/FamiljenGrotesk-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'familjen-grotesk-italic';
+    src: url('../fonts/FamiljenGrotesk-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Italic';
+    src: url('../fonts/Sanchez-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('../fonts/Sanchez-Regular.ttf');
+}
+
+/* POLICES */
+
+:root {
+    --main-blue: #0A3782;
+    --beige: #F5E3D3;
+    --secondary-blue: #0096CA;
+    --background-color: #EDF2F7;
+    --h1-size: 2em;
+    --h2-size: 1.5em;
+    --h3-size: 1.2em;
+    --p-size: 1em;
+    --radius-size: 10px;
+    --icon-default-size: 45px;
+    --icon-color-main-blue : invert(18%) sepia(88%) saturate(1253%) hue-rotate(195deg) brightness(92%) contrast(104%);
+    --icon-color-beige: invert(94%) sepia(9%) saturate(1053%) hue-rotate(313deg) brightness(103%) contrast(92%);
+    --icon-color-secondary-blue: invert(48%) sepia(47%) saturate(6196%) hue-rotate(169deg) brightness(96%) contrast(101%);
+}
+
+.table_bloc {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+thead {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid var(--main-blue);
+    text-align: center;
+    color: var(--main-blue);
+}
+
+td {
+    background-color: var(--background-color) ;
+    font-family: "Montserrat-Medium", sans-serif;
+}
+
+th {
+    background-color: #0a3682ed;
+    padding: 5px;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+    color: var(--beige);
+}
+
+thead .supprimer {
+    display: none;
+    border: none;
+}
+
+.check_form input[type="checkbox"]{
+    margin: 0.5em;
+}
+
+.check_form {
+    justify-content: center;
+}
+
+/* Styles pour les cases à cocher cochées */
+.check_form input[type="checkbox"]:checked {
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+    background-color: var(--main-blue);
+    border-color: var(--main-blue); /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+}
+
+.taille_checkbox:focus {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+  
+.taille_checkbox:hover {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+
+#button_suppr {
+    cursor: pointer;
+}
+
+td:first-child {
+    color: var(--main-blue);
+}
+
+*:focus {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}

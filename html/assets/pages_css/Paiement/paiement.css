@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Semibold';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+
+/* Contient le formulaire de paiement et le bouton payer */
+.conteneur_paiement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur carré du paiement */
+.paiement {
+    border: solid black 1px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 30px;
+    background-color: white;
+    width: 35vw;
+}
+
+/* Conteneur du Titre du formulaire et du logo de carte de crédit */
+.titre_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Logo carte de crédit */
+.logo_cb {
+    width: 2.5vw;
+}
+
+/* Titre du formulaire */
+.titre_form h2 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: var(--p-size);
+}
+
+/* Champs du formulaire */
+.champ {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+/* Conteneur du champ du cryptogramme et de la date d'expiration */
+.alignement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Champ du cryptogramme */
+.crypto {
+    align-self: flex-end;
+}
+
+/* Champ de la date d'expiration */
+.expiration {
+    align-items: flex-start;
+}
+
+/* Police des noms des champs et des champs du formulaire */
+label, input {
+    font-family: 'Montserrat-Semibold', sans-serif;
+}
+
+/* Nom des champs */
+label {
+    margin-bottom: 10px;
+    font-size: 0.80em;
+}
+
+/* Champs du formulaire */
+input {
+    border: none;
+    border-bottom: solid black 1px;
+}
+
+/* Bouton pour payer */
+form .button_form {
+    margin: 0;
+    padding: 5px 5px;
+    width: 20vw;
+    border-radius: 8px;
+}
+
+/* Texte pour accepter les conditions générales */
+.check_form label {
+    font-size: var(--h3-size);
+    color: black;
+}
+
+/* Conteneur avec la checkbox */
+.check_form {
+    margin: 15px 0;
+    justify-content: center;
+    color: black;
+}
+
+/* Style pour la checkbox */
+.check_form input[type="checkbox"] {
+    border: 2px solid black;
+}
+
+/* Style pour la checkbox en "checked" */
+.check_form input[type="checkbox"]:checked {
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    /* Couleur de la bordure lorsque la case est cochée */
+    padding: 2.2px;
+    content: url(../../ressources/icons/checkmarkcheckbox.svg);
+}
+
+/* Trait de séparation */
+.trait {
+    width: 150%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+/* Entete de la page */
+.entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 15px 15px 15px;
+}
+
+/* Titre de l'entete */
+.entete h2 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: var(--p-size);
+}
+
+/* les 4 îcones de sociétés financières */
+.icone_paiement {
+    margin: 10px 0 5px 0;
+}
+
+/* Conteneur du "Paiement sécurisé" */
+.security {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Cadenas du "Paiement sécurisé" */
+.security img {
+    margin-right: 5px;
+}
+
+/* Texte du "Paiement sécurisé" */
+.security p {
+    font-family: 'Montserrat-Semibold', sans-serif;
+}
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    border: 2px solid var(--main-blue);
+}
+
+.popup h1 {
+    color: var(--main-blue);
+}
+
+.popup .button_form {
+    margin-top: 3em;
+}
+
+@media (max-width:1200px) {
+    label {
+        font-size: 0.8em;
+    }
+
+    .alignement {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .crypto {
+        align-self: flex-start;
+    }
+
+    .conteneur_paiement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .paiement {
+        width: 100%;
+    }
+    .icone_paiement {
+        margin: 5px 0 5px 0;
+    }
+}
+
+*:focus:not(.photo_accueil) {
+    border: 2px solid var(--main-blue);
+    outline: 2px solid var(--secondary-blue); 
+    outline-offset: 2px;
+}
+
+.taille_checkbox:focus {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
+  
+.taille_checkbox:hover {
+    border: 2px solid var(--main-blue) !important;
+    outline: 2px solid var(--secondary-blue) !important; 
+    outline-offset: 2px !important;
+}
